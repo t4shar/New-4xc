@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homebanners{
+    padding-block: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    
+}
+.homebanners::after{
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    
+}
+.homebanners h2{
+    color: white;
+    text-transform: uppercase;
+}
+.homebanners span{
+    color: yellow;
+}
